@@ -9,7 +9,7 @@ https://mkyong.com/java/jackson-how-to-ignore-null-fields/
 
 https://www.baeldung.com/jackson-object-mapper-tutorial
 
-1. @JsonIgnore at field level ignores that field and @JsonIgnoreProperties() lets us ignore multiple fields.
+1. @JsonIgnore at field level ignores that field and @JsonIgnoreProperties() lets us ignore multiple fields. @JsonIgnoreProperties(ignoreUnknown = true) allows client to send some additional fields as well not in the class.
 2. @JsonInclude(JsonInclude.Include.NON_NULL)
 3. String to JSON Object:
    String json = "{\"name\": \"mkyong\", \"age\": 20}";
