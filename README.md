@@ -30,3 +30,8 @@ https://www.baeldung.com/jackson-object-mapper-tutorial
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+
+ 6. Object to List/Array:
+    List<MyData> details = mapper.convertValue(myObject,
+                new TypeReference<List<MyData>>() {
+                }); 
