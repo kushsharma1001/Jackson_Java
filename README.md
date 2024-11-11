@@ -11,13 +11,13 @@ https://www.baeldung.com/jackson-object-mapper-tutorial
 
 1. @JsonIgnore at field level ignores that field and @JsonIgnoreProperties() lets us ignore multiple fields.
 2. @JsonInclude(JsonInclude.Include.NON_NULL)
-3. 
-4. String json = "{\"name\": \"mkyong\", \"age\": 20}";
-    Person obj = mapper.readValue(json, Person.class);
+3. String to JSON Object:
+   String json = "{\"name\": \"mkyong\", \"age\": 20}";
+   Person obj = mapper.readValue(json, Person.class);
   
-5. Person person = new Person("mkyong", 42);
-
-        ObjectMapper om = new ObjectMapper();
+5. Object to String:
+       Person person = new Person("mkyong", 42);
+       ObjectMapper om = new ObjectMapper();
 
         try {
 
